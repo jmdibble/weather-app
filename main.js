@@ -13,6 +13,8 @@ let options = {
     }
 }
 
+app.use('/scripts', express.static(__dirname + '/scripts'));
+
 app.get('/weather', (req, res) => {
     res.sendFile('./weather.html', options)
 })
