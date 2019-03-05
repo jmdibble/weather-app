@@ -5,59 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <title>Weather App</title>
 </head>
 
 <body>
 
-    <h1>Weather App</h1>
-    <input id="country" list="countries" required placeholder="Country">
+    <div class="main-title">
+        <h1>Weather App</h1>
+    </div>
 
-    <datalist id="countries">
-        <option value="UK">
-        <option value="Australia">
-        <option value="France">
-        <option value="USA">
-    </datalist>
+    <!-- <div class="inputs"> -->
+        <form class="inputs">
+        <input type="text" id="country" list="countries" required placeholder="Country">
+        <datalist id="countries">
+            <option value="UK">
+            <option value="Australia">
+            <option value="France">
+            <option value="USA">
+        </datalist>
 
-    <input id="city" required placeholder="City">
+        <input type="text" id="city" required placeholder="City">
+        </form>
 
-    <button id='btnGo'>Go</button>
+        <button class="submit-button" id='btnGo'>Go</button>
+    <!-- </div> -->
 
-    <div>
+    <div id="weather-content">
         <h2>Weather</h2>
         <h4 id="desc1"></h4>
         <h2>Temperature</h2>
         <h4 id="desc2"></h4>
+
     </div>
 
 </body>
-
-<script>
-    // //declare call-back functions
-
-    // const handleClick = () => {
-    //     //console.log(`${city.value}`, `${country.value}`)
-    //     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&APPID=48f2d5e18b0d2bc50519b58cce6409f1`
-    //     //console.log(url)
-    //     fetch(url)
-    //         .then((response) => {
-    //             return response.json()
-    //         })
-    //         .then((data) => {
-    //             //console.log(data)
-    //             //console.log(data.weather[0].description)
-    //             let desc11 = (data.weather[0].description)
-    //             let desc22 = Math.floor(data.main.temp - 273)
-    //             desc1.innerHTML = desc11
-    //             desc2.innerHTML = `${desc22}℃`
-    //         })
-    // }
-
-    // // assign event listeners
-    // btnGo.addEventListener('click', handleClick)
-
-</script>
 
 <script src="./scripts/display_res.js"></script>
 

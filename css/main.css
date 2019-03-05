@@ -1,0 +1,67 @@
+body {
+    background-image: url("../images/sky.jpg");
+    font-family: 'Nunito', sans-serif; !important;
+    margin: auto;
+    text-align: center;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+.main-title {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+input[type=text] {
+  font-size: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px;
+  /* border-radius: 100px; */
+  border: 0px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+input::placeholder {
+  color: #b7b7b7;
+  font-size: 20px;
+}
+
+input:focus, .form-line-active textarea:focus {
+  border-bottom: 3px solid #ffffff !important;
+  /* box-shadow: 0 0 1px #ffffff !important; */
+  }
+  
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+  }
+
+.submit-button {
+  padding: 15px;
+  border-radius: 100px;
+  border: 0px;
+  width: 80px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.inputs {
+  display: inline-block;
+  margin: auto;
+  align-content: center;
+  padding: 20px;
+}
+
+#weather-content {
+  margin: auto;
+  display: inline;
+  text-align: center;
+}

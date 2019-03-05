@@ -14,6 +14,8 @@ let options = {
 }
 
 app.use('/scripts', express.static(__dirname + '/scripts'));
+app.use('/css', express.static(__dirname + '/css'));
+app.use('/images', express.static(__dirname + '/images'));
 
 app.get('/weather', (req, res) => {
     res.sendFile('./weather.html', options)
@@ -24,4 +26,9 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {console.log(`Express server listening on port ${port}`)})
+
+// ADDITIONS
+// Add location and find weather
+// Add icons for each type of weather
+// Change background colour dependent on weather
 
