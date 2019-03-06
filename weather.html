@@ -17,7 +17,7 @@
     </div>
 
     <!-- <div class="inputs"> -->
-        <form class="inputs">
+    <form class="inputs">
         <input type="text" id="country" list="countries" required placeholder="Country">
         <datalist id="countries">
             <option value="UK">
@@ -27,21 +27,26 @@
         </datalist>
 
         <input type="text" id="city" required placeholder="City">
-        </form>
+    </form>
 
-        <button class="submit-button" id='btnGo'>Go</button>
+    <button class="submit-button" id='btnGo'>Go</button>
+    <button class="submit-button" id='btnLocation'>Find</button>
     <!-- </div> -->
 
     <div id="weather-content">
-        <h2>Weather</h2>
-        <h4 id="desc1"></h4>
-        <h2>Temperature</h2>
-        <h4 id="desc2"></h4>
-
+        <div>
+            <h2>Weather</h2>
+            <h4 id="desc1"></h4>
+        </div>
+        <div>
+            <h2>Temperature</h2>
+            <h4 id="desc2"></h4>
+        </div>
     </div>
 
 </body>
 
 <script src="./scripts/display_res.js"></script>
+<script src="./scripts/location.js"></script>
 
 </html>

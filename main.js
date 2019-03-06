@@ -21,6 +21,10 @@ app.get('/weather', (req, res) => {
     res.sendFile('./weather.html', options)
 })
 
+app.get('*', function(req, res) {
+    res.sendFile('./weather.html', options)
+  });
+
 app.get('*', (req, res) => {
     res.send(`<div>Sorry, 404 not found</div>`)  // THIS MUST BE THE LAST ONE
 })

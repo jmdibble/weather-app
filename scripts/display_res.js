@@ -1,7 +1,6 @@
-//declare call-back functions
+// Declare call-back functions
 
 const handleClick = () => {
-    console.log(`${city.value}`, `${country.value}`)
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&APPID=48f2d5e18b0d2bc50519b58cce6409f1`
     console.log(url)
     fetch(url)
@@ -14,7 +13,7 @@ const handleClick = () => {
             let desc11 = (data.weather[0].description)
             let desc22 = Math.floor(data.main.temp - 273)
             desc1.innerHTML = desc11
-            desc2.innerHTML = `${desc22}℃`
+            desc2.innerHTML = `${desc22}&deg;C`
         })
 }
 
