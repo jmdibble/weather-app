@@ -24,7 +24,6 @@ function getCity(y, x) {
         })
         .then((data) => {
             console.log(data)
-            console.log(data.result[0].admin_district[0])
             let city1 = (data.result[0].admin_district[0])
             let country1 = (data.result[0].country[0])
             city.value = city1
