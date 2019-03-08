@@ -62,9 +62,19 @@ input:focus, textarea:focus, select:focus {
 }
 
 #weather-content {
-  margin: auto;
+  margin: 30px 20px 20px 20px;
   padding: 15px, 20px, 5px, 20px;
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.underlay {
+  margin: auto;
+  position: absolute;
+  padding: 15px, 20px, 5px, 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  z-index: -1;
 }
