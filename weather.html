@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Weather App</title>
@@ -16,31 +16,53 @@
 
     <div class="main-title">
         <h1>Weather App</h1>
+        <h3>24hr Geo-Location Weather Forecast</h3>
     </div>
 
     <div>
         <form class="inputs">
-            <input type="text" id="country" required placeholder="Country">
-
-            <input type="text" id="city" required placeholder="City">
+            <input type="text" id="city" required placeholder="City" value="london">
+            <input type="text" id="country" required placeholder="Country" value="england">
         </form>
     </div>
-    <div>
+    <div class="buttons">
         <button class="submit-button" id='btnGo'>Go</button>
         <button class="submit-button" id='btnLocation'><i class="fas fa-location-arrow"></i></button>
+        <button class="submit-button" id='btnFive'>24hr</button>
     </div>
 
     <div id="weather-content">
         <svg class="underlay" width="800" height="500">
             <rect width="800" height="500" style="fill:rgb(255,255,255,0.3);" />
         </svg>
-        <div>
+        <div class="rows">
             <h2>Weather</h2>
-            <h4 id="desc1"></h4>
-        </div>
-        <div>
             <h2>Temperature</h2>
-            <h4 id="desc2"></h4>
+        </div>
+        <div class="cols">
+            <h4 id="plus0">Now</h4>
+            <p id="desc1"></p>
+            <p id="desc2"></p>
+        </div>
+        <div class="cols">
+            <h4 id="plus6"></h4>
+            <p id="weath6"></p>
+            <p id="temp6"></p>
+        </div>
+        <div class="cols">
+            <h4 id="plus12"></h4>
+            <p id="weath12"></p>
+            <p id="temp12"></p>
+        </div>
+        <div class="cols">
+            <h4 id="plus18"></h4>
+            <p id="weath18"></p>
+            <p id="temp18"></p>
+        </div>
+        <div class="cols">
+            <h4 id="plus24"></h4>
+            <p id="weath24"></p>
+            <p id="temp24"></p>
         </div>
     </div>
 
@@ -49,5 +71,7 @@
 
 <script src="./scripts/display_res.js"></script>
 <script src="./scripts/location.js"></script>
+<script src="./scripts/twenty_four.js"></script>
+<script src="./scripts/hours.js"></script>
 
 </html>
