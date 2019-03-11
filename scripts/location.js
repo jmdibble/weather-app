@@ -1,4 +1,4 @@
-// Get the location of the user
+// This file gets the location of the user and fills this into the input fields
 
 var x = document.getElementById("btnLocation");
 
@@ -28,11 +28,8 @@ function getCity(y, x) {
             let country1 = (data.result[0].country[0])
             city.value = city1
             country.value = country1
-            handleClick()
         })
 }
-
-
 
 btnLocation.addEventListener('click', getLocation)
 

@@ -1,3 +1,6 @@
+// This files deals with writing out the correct hours of the day
+// for the next 24hr
+
 var date = new Date();
 var current_hour = date.getHours();
 
