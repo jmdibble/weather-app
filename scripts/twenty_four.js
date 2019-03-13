@@ -11,7 +11,7 @@ const weatherNow = () => {
             console.log(data)
             let desc11 = (data.weather[0].description)
             let desc22 = Math.floor(data.main.temp - 273)
-            desc1.innerHTML = desc11
+            desc1.innerHTML = (desc11)
             desc2.innerHTML = `${desc22}&deg;C`
         })
 }
