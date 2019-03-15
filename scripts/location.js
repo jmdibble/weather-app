@@ -13,6 +13,7 @@ function getLocation() {
 function showPosition(position) {
     let x = position.coords.latitude;
     let y = position.coords.longitude;
+    console.log(y, x)
     getCity(y, x);
 }
 
@@ -31,7 +32,7 @@ function getCity(y, x) {
         })
 }
 
-btnLocation.addEventListener('click', getLocation)
+btnLocation.addEventListener('click', showPosition)
 
 
 
