@@ -17,8 +17,6 @@ function getIP() {
         })
 }
 
-
-
 btnLocation.addEventListener('click', getIP)
 
 

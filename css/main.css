@@ -95,15 +95,32 @@ input:focus, textarea:focus, select:focus {
 
 .cols {
   margin: 0px 20px 0px 20px;
-  width: 80px;
+  width: 110px;
+}
+
+#plus0, #plus6, #plus12, #plus18, #plus24 {
+  /* text-align: center; */
 }
 
 .rows {
-  margin: 50px 20px 0px 20px;
+  margin: 150px 20px 0px 20px;
+}
+
+.descriptions {
+  margin-top: 70px;
+  width: 120px;
+}
+
+#icon0, #icon6, #icon12, #icon18, #icon24 {
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  /* left: 20px; */
+  color: #ffffff;
 }
 
 .underlay {
-  width: 900px;
+  width: 1000px;
   height: 400px;
   margin: auto;
   position: absolute;
