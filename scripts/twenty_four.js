@@ -46,5 +46,4 @@ const getRest = () => {
 // assign event listeners
 btnFive.addEventListener('click', getRest)
 
-// Way to optimise 
-// Use ID codes instead of names
+
