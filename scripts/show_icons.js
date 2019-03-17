@@ -66,5 +66,4 @@ function getIcon() {
     }
 }
 
-module.exports.getIcon = getIcon;
-export function getIcon();
+module.exports.getIcon = getIcon();
