@@ -31,8 +31,5 @@ app.get('*', (req, res) => {
 
 app.listen(port, () => {console.log(`Express server listening on port ${port}`)})
 
-// ADDITIONS
-// Add location and find weather
-// Add icons for each type of weather
-// Change background colour dependent on weather
+
 
