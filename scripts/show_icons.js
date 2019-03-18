@@ -66,7 +66,7 @@ function getIcon() {
     }
 }
 
-module.exports.getIcon = getIcon();
+// module.exports.getIcon = getIcon;
 
 // Way to optimise 
 // Use ID codes instead of names

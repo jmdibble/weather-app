@@ -1,7 +1,5 @@
 // weatherNow gets the weather for right now
 
-const icon = require('show_icons');
-
 const weatherNow = () => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&APPID=48f2d5e18b0d2bc50519b58cce6409f1`
     console.log(url)
@@ -15,7 +13,7 @@ const weatherNow = () => {
             let desc22 = Math.floor(data.main.temp - 273)
             desc1.innerHTML = (desc11)
             desc2.innerHTML = `${desc22}&deg;C`
-            icon.getIcon()
+            getIcon()
         })
 }
 
@@ -39,11 +37,15 @@ const getRest = () => {
             temp12.innerHTML = Math.floor(data.list[4].main.temp - 273.15) + "&deg;C"
             temp18.innerHTML = Math.floor(data.list[6].main.temp - 273.15) + "&deg;C"
             temp24.innerHTML = Math.floor(data.list[8].main.temp - 273.15) + "&deg;C"
-            icon.getIcon()
+            getIcon()
         })
 }
 
 // assign event listeners
+// var btnFive = document.getElementById('#btnFive')
 btnFive.addEventListener('click', getRest)
+// btnFive.addEventListener('click', function () {
+//     console.log('clikc!')
+// })
 
 
