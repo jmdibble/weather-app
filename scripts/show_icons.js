@@ -45,7 +45,10 @@ function getIcon() {
             tags[i].innerHTML == "Heavy shower snow") {
             document.getElementById(`icon${icons[i]}`).className = "fas fa-snowflake"
         } else if (
-            tags[i].innerHTML == "clear sky") {
+            tags[i].innerHTML == "clear sky" && 19 <= plus18<= 5) {
+            document.getElementById(`icon${icons[i]}`).className = "fas fa-moon"
+        } else if (
+            tags[i].innerHTML == "clear sky" && 5 > plus18 > 19) {
             document.getElementById(`icon${icons[i]}`).className = "fas fa-sun"
         } else if (
             tags[i].innerHTML == "few clouds: 11-25%" ||
@@ -59,7 +62,7 @@ function getIcon() {
             tags[i].innerHTML == "Haze" ||
             tags[i].innerHTML == "fog" ||
             tags[i].innerHTML == "dust") {
-            document.getElementById(`icon${icons[i]}`).className = "fas fa-cloud"
+            document.getElementById(`icon${icons[i]}`).className = "fas fa-smog"
         } else {
             document.getElementById(`icon${icons[i]}`).className = "fas fa-cloud"
         }
