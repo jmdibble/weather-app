@@ -7,7 +7,8 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(to right top, #5d53bc, #5f62c6, #6171d0, #667fd9, #6c8de1, #6699e9, #61a5ef, #60b1f4, #51bdf7, #4ac8f7, #4ed3f4, #5bddf0);    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to right top, #5d53bc, #5f62c6, #6171d0, #667fd9, #6c8de1, #6699e9, #61a5ef, #60b1f4, #51bdf7, #4ac8f7, #4ed3f4, #5bddf0);    
+    font-family: 'Raleway', sans-serif;
     margin: auto;
     text-align: center;
     overflow: scroll;
